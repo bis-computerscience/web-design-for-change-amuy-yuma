@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Security Protection</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="nav-left">
+            <!-- Logo Image and Text -->
+            <img src="files/logo.png" alt="Logo" class="logo-img">
+            <div class="logo-text">CCTV Security Protection</div>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-container">
+            <!-- Navigation Links -->
+            <div class="nav-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="issues.html" class="nav-link">Issues</a>
+                <a href="petition.html" class="nav-link">Petition</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About us</a>
+            </div>
+            
+        </div>
+        <div class="nav-right">
+            <!-- Sign Up and Account Links -->
+            <a href="#signup" class="signup-button">Sign Up</a>
+            <img src="files/account.png" alt="Account" class="account-icon">
+        </div>
+    </div>
+
+    <!-- Drawer Navigation for Mobile -->
+    <div class="drawer-nav" id="drawerNav">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="issues.html" class="drawer-link">Issues</a>
+        <a href="petition.html" class="drawer-link">Petition</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+        <a href="about.html" class="drawer-link">About us</a>
+    </div>
+ 
+    <!-- Main Content -->
+    <div class="content">
+        <div class="content-left">
+            <!-- Main Heading and Description -->
+            <h1>Uncover the truth behind the lens:</h1>
+            <p>Sign our petition to support citizens in China who are subjected to one of the most extensive surveillance networks globally, 
+                with over 200 million CCTV cameras monitoring their every move. China's advanced facial recognition technology, coupled with 
+                the pervasive social credit system, invades individuals' privacy and threatens their fundamental rights. This massive surveillance 
+                apparatus not only violates human rights but also sets a dangerous precedent for global authoritarianism. By signing our petition, 
+                you can help advocate for the rights of individuals in China to privacy, freedom, and dignity, and contribute to the broader fight 
+                for human rights worldwide. Join us in demanding an end to the invasive surveillance culture and the protection of citizens' rights 
+                to privacy and autonomy.</p>
+            <!-- Email Input and Get Started Button -->
+            <input type="email" placeholder="ENTER EMAIL">
+            <a href="petition.html" id="getStartedButton">GET STARTED</a>
+
+        </div>
+        <div class="content-right">
+            <!-- Carousel for Images -->
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="files/camera1.png" alt="CCTV Camera 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="files/camera2.jpg" alt="CCTV Camera 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="files/camera3.jpg" alt="CCTV Camera 3">
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-left">
+            <!-- Social Media Links -->
+            <h3>Follow our Social Media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="files/facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox"><img src="files/email.png" alt="Email" class="social-icon"></a>
+                <a href="https://www.instagram.com/yuma_11111/"><img src="files/instagram.png" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.twitter.com"><img src="files/twitter.png" alt="Twitter" class="social-icon"></a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <!-- Footer Text -->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                 sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                 ipsum dolor sit amet. </p>
+            <p>&copy; Yuma Bellm 26.4.2024 | s0069041@bis-school.com</p>
+        </div>
+        <div class="footer-right">
+            <!-- Footer Links -->
+            <a href="#help">HELP</a>
+            <a href="#accessibility">ACCESSIBILITY</a>
+            <a href="#careers">CAREERS</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.h1 {
+    font-size: 2em;
+    font-style: oblique;
+}
+.h2 {
+    font-size: 1em;
+    font-style: oblique;
+}
+.h3 {
+    font-size: 0.5em;
+    font-style: oblique;
+}
+
+/* Navigation Bar Styles */
+.nav {
+    background-color: #f5f4f9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img, .account-icon {
+    height: 90px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #31454e;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links Styles */
+.nav-container a {
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #31454e;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+.nav-container a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Sign Up Button Styles */
+.nav-right .signup-button {
+    border: 2px solid black;
+    background-color: #f5f4f9;
+    color: black;
+    margin-right: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.account-link {
+    display: inline-block;
+}
+
+.account-icon {
+    height: 90px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+
+
+
+
+/* Additional styling for the petition page */
+
+.petition-info {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.petition-info::before {
+    content: "\201C"; /* Left double quotation mark */
+    font-size: 2rem;
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.petition-info::after {
+    content: "\201D"; /* Right double quotation mark */
+    font-size: 2rem;
+    color: #999;
+    margin-left: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 98%;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #f5f4f9;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.footer-left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-left h3 {
+    margin: 0;
+}
+
+/* Social Media Icons Styles */
+.social-icons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer Links Styles */
+.footer a {
+    color: #31454e;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .content-left, .content-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-right {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-container a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right, .footer-center {
+        text-align: center;
+        flex: 1 0 100%;
+    }
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+/* Drawer Navigation Styles */
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #31454e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.drawer-nav.active {
+    transform: translateX(0);
+}
+
+/* Drawer Links Styles */
+.drawer-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.drawer-link:hover {
+    background-color: #ddd;
+    color: #31454e;
+    padding-left: 10px;
+}

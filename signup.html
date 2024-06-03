@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Include the Google Sign-In API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Specify the client ID for Google Sign-In -->
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <!-- Optional: Add custom styles for the sign-up page -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sign-up form -->
+    <div class="sign-up-container">
+        <h2>Create an Account</h2>
+        <form action="signup.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="google-signin-button" data-onsuccess="onSignIn"></div>
+    </div>
+
+    <!-- JavaScript function to handle Google sign-in -->
+    <script>
+        function onSignIn(googleUser) {
+            // Retrieve user profile information
+            var profile = googleUser.getBasicProfile();
+            // Display user information
+            console.log('ID: ' + profile.getId());
+            console.log('Full Name: ' + profile.getName());
+            console.log('Email: ' + profile.getEmail());
+            // You can also send the user information to your backend for further processing
+        }
+    </script>
+</body>
+</html>
